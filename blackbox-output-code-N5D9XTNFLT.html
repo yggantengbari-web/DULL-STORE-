@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info JB - Kontak & Grup</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 2.5em;
+            font-weight: bold;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 1.8em;
+        }
+
+        .contact-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 20px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .phone {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #25D366;
+            text-decoration: none;
+            display: block;
+            margin: 10px 0;
+        }
+
+        .whatsapp-btn {
+            display: inline-block;
+            background: #25D366;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px 5px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+        }
+
+        .whatsapp-btn:hover {
+            background: #128C7E;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
+        }
+
+        .group-link, .channel-link {
+            display: inline-block;
+            background: #f39c12;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px 5px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(243, 156, 18, 0.4);
+        }
+
+        .group-link:hover, .channel-link:hover {
+            background: #e67e22;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(243, 156, 18, 0.6);
+        }
+
+        .title {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            .logo {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">📱 JB INFO</div>
+        <h1>Kontak & Grup Resmi</h1>
+        
+        <div class="contact-card">
+            <div class="title">📞 Nope 1</div>
+            <a href="https://wa.me/6287766282225" class="phone whatsapp-btn" target="_blank">
+                0877 6628 2225
+            </a>
+        </div>
+
+        <div class="contact-card">
+            <div class="title">📞 Nope 2</div>
+            <a href="https://wa.me/6285235572746" class="phone whatsapp-btn" target="_blank">
+                0852 3557 2746
+            </a>
+        </div>
+
+        <div class="contact-card">
+            <div class="title">👥 Grup JB</div>
+            <a href="https://chat.whatsapp.com/H2ikvQdHHqt6RXGs49UKEv?mode=hqctcla" class="group-link" target="_blank">
+                Join Grup
+            </a>
+        </div>
+
+        <div class="contact-card">
+            <div class="title">📢 Saluran Testi</div>
+            <a href="https://whatsapp.com/channel/0029Vb6tvVpFCCoSt2nWhg1G" class="channel-link" target="_blank">
+                View Channel
+            </a>
+        </div>
+    </div>
+</body>
+</html>
